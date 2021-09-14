@@ -30,7 +30,7 @@ function __init__() {
     i=1
     while [ i < 20 ];
     do
-        curl -L TUX"$i" > ~/.tux42/tux/tux-"$i".txt;
+        curl -L "TUX$i" > "~/.tux42/tux/tux-$i.txt";
     done
 
 }
