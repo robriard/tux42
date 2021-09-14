@@ -50,7 +50,6 @@ function __init__() {
 
 function main() {
     __init__
-    echo "START"
     python3 ~/.tux42/main.py
 }
 
