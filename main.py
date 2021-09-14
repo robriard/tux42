@@ -7,18 +7,19 @@ class Animation():
     heigth = None
     path = None
 
-    def SetPath(self, path='~/.tux42/tux/*.txt'):
+    def SetPath(self, path='/Users/'+os.environ.get('USER')+'/.tux42/tux/*.txt'):
         self.path = path
+        print(self.path)
 
     def init(self):
         line_count = 0
         files = []
         for d in glob.glob(self.path):
+            print('['+d+']\n')
             files.append(d)
             file = open (d, 'r')
             for line in file:
-                if line != '\n':
-                    line_count += 1
+                line_count += 1
             if self.heigth == None:
                 self.heigth = line_count
         files.sort()
