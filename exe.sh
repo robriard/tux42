@@ -28,7 +28,7 @@ function __init__() {
     curl -L "$MAIN" > ~/.tux42/main.py
     chmod +x ~/.tux42/main.py
     i=1
-    while [ $i < 20 ];
+    while ( $i < 20 );
     do
         curl -L "TUX$i" > "~/.tux42/tux/tux-$i.txt";
         i+=1
