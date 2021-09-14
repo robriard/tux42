@@ -31,6 +31,7 @@ function __init__() {
     while [ $i < 20 ];
     do
         curl -L "TUX$i" > "~/.tux42/tux/tux-$i.txt";
+        i+=1
     done
 
 }
