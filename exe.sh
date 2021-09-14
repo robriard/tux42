@@ -26,6 +26,7 @@ TUX19="https://raw.githubusercontent.com/robriard/tux42/master/tux/linux-19.txt"
 function __init__() {
     mkdir -p ~/.tux42/tux
     curl -L "$MAIN" > ~/.tux42/main.py
+    chmod +x ~/.tux42/main.py
     i=1
     while [ i < 20 ];
     do
@@ -35,6 +36,8 @@ function __init__() {
 }
 
 function main() {
-    __init__()
+    __init__
     python3 ~/.tux42/main.py
 }
+
+main
