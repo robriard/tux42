@@ -7,7 +7,7 @@ class Animation():
     heigth = None
     path = None
 
-    def SetPath(self, path='~/.tux42/tux/*.txt'):
+    def SetPath(self, path='~/.tux42/*.txt'):
         self.path = path
 
     def init(self):

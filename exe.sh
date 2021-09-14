@@ -2,7 +2,6 @@
 
 MAIN='https://raw.githubusercontent.com/robriard/tux42/master/main.py'
 
-TUX0="https://raw.githubusercontent.com/robriard/tux42/master/tux/linux-0.txt"
 TUX1="https://raw.githubusercontent.com/robriard/tux42/master/tux/linux-1.txt"
 TUX2="https://raw.githubusercontent.com/robriard/tux42/master/tux/linux-2.txt"
 TUX3="https://raw.githubusercontent.com/robriard/tux42/master/tux/linux-3.txt"
@@ -27,13 +26,25 @@ function __init__() {
     mkdir -p ~/.tux42/tux
     curl -L "$MAIN" > ~/.tux42/main.py
     chmod +x ~/.tux42/main.py
-    i=1
-    while (( $i < 20 ));
-    do
-        curl -L "TUX$i" > "~/.tux42/tux/tux-$i.txt";
-        i+=1
-    done
-
+    curl -L "$TUX1" > ~/.tux42/tux/linux-1.txt
+    curl -L "$TUX2" > ~/.tux42/tux/linux-2.txt
+    curl -L "$TUX3" > ~/.tux42/tux/linux-3.txt
+    curl -L "$TUX4" > ~/.tux42/tux/linux-4.txt
+    curl -L "$TUX5" > ~/.tux42/tux/linux-5.txt
+    curl -L "$TUX6" > ~/.tux42/tux/linux-6.txt
+    curl -L "$TUX7" > ~/.tux42/tux/linux-7.txt
+    curl -L "$TUX8" > ~/.tux42/tux/linux-8.txt
+    curl -L "$TUX9" > ~/.tux42/tux/linux-9.txt
+    curl -L "$TUX10" > ~/.tux42/tux/linux-10.txt
+    curl -L "$TUX11" > ~/.tux42/tux/linux-11.txt
+    curl -L "$TUX12" > ~/.tux42/tux/linux-12.txt
+    curl -L "$TUX13" > ~/.tux42/tux/linux-13.txt
+    curl -L "$TUX14" > ~/.tux42/tux/linux-14.txt
+    curl -L "$TUX15" > ~/.tux42/tux/linux-15.txt
+    curl -L "$TUX16" > ~/.tux42/tux/linux-16.txt
+    curl -L "$TUX17" > ~/.tux42/tux/linux-17.txt
+    curl -L "$TUX18" > ~/.tux42/tux/linux-18.txt
+    curl -L "$TUX19" > ~/.tux42/tux/linux-19.txt
 }
 
 function main() {
