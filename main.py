@@ -1,6 +1,6 @@
 #! /usr/bin/python3
 
-import os, sys, time, glob, curses
+import os, sys, time, glob
 
 class Animation():
     frames = []
