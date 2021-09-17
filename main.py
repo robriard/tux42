@@ -34,7 +34,7 @@ class Animation():
             for frame in self.frames:
                 for i in range(os.get_terminal_size().lines - self.heigth):
                     print('\n')
-                print("".join(self.frames[i]))
+                print("".join(frame))
                 time.sleep(0.2)
 
 
