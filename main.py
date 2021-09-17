@@ -30,7 +30,7 @@ class Animation():
                 self.FrameNumber+=1
 
     def execute(self):
-        i = 0:
+        i = 0
         while i >= 0 and i < self.FrameNumber:
             for i in range(os.get_terminal_size().lines - self.heigth):
                 print('\n')
