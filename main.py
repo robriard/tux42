@@ -8,7 +8,7 @@ class Animation():
     heigth = None
     path = None
 
-    def SetPath(self, path='os.environ.get('HOME')+'/.tux42/tux/*.txt'):
+    def SetPath(self, path=os.environ.get('HOME')+'/.tux42/tux/*.txt'):
         self.path = path
         print(self.path)
 
